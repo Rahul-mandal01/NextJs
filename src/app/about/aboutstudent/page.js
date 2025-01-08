@@ -1,7 +1,7 @@
 const AboutStudent = () => {
   return (
     <div>
-      <h1>About Page for Students</h1>
+      <h1 className="heading">About Page for Students</h1>
     </div>
   );
 };
