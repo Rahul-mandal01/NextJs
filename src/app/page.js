@@ -2,6 +2,8 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
+
 
 export default function Home() {
   const router = useRouter();
@@ -39,63 +41,64 @@ export default function Home() {
     </div>
   );
 }
-'use client' //Directive Definition for using client side javascript 
-import styles from "./page.module.css";
-import { useState } from "react";
 
-export default function Home() {
-  const [name, setName] = useState("Rahul");
 
-  // let data = "Rahul";
 
-  // const apple = (item) =>{
-  //   alert(item);
-  // }
+// EXAMPLE OF HOW TO USE VARIABLE DATA
 
-  // USING STATE DATA
-  const apple = () => {
-    setName("John");
-  }
+// export default function Home() {
+//   const [name, setName] = useState("Rahul");
 
-  // USING VARIABLE DATA
-  // const apple = () =>{
-  //   data = "John";
-  // }
+//   // let data = "Rahul";
 
-  // COMPONENT UNDER COMPONENT
-  const InnerComp = () => {
-    return(
-      <div>
-        <h3>Inner Component</h3>
-      </div>
-    );
-  }
+//   // const apple = (item) =>{
+//   //   alert(item);
+//   // }
 
-  return (
-    <div className={styles.page}>
-      {/* <User name="Rahul"/>
-      <User name="John"/>
+//   // USING STATE DATA
+//   const apple = () => {
+//     setName("John");
+//   }
 
-      <h1> Home Page </h1>
+//   // USING VARIABLE DATA
+//   // const apple = () =>{
+//   //   data = "John";
+//   // }
 
-      <User name="Sam"/>
-      <User name="Alice"/> */}
+//   // COMPONENT UNDER COMPONENT
+//   const InnerComp = () => {
+//     return(
+//       <div>
+//         <h3>Inner Component</h3>
+//       </div>
+//     );
+//   }
 
-      <h1>Events, function and state {name}</h1>
-      {/* <h1>Events, function and state {data}</h1> */}
-      {/* <button onClick={() => alert("Hello Rahul!")}>Click Me</button> */}
-      {/* <button onClick={() => apple("color")}>Click Me</button> */}
-      <button onClick={ () => apple()}>Click Me</button>
+//   return (
+//     <div className={styles.page}>
+//       {/* <User name="Rahul"/>
+//       <User name="John"/>
+
+//       <h1> Home Page </h1>
+
+//       <User name="Sam"/>
+//       <User name="Alice"/> */}
+
+//       <h1>Events, function and state {name}</h1>
+//       {/* <h1>Events, function and state {data}</h1> */}
+//       {/* <button onClick={() => alert("Hello Rahul!")}>Click Me</button> */}
+//       {/* <button onClick={() => apple("color")}>Click Me</button> */}
+//       <button onClick={ () => apple()}>Click Me</button>
       
-      {/* CALLING INNER COMPONENT */}
-      {/* <InnerComp /> */}
+//       {/* CALLING INNER COMPONENT */}
+//       {/* <InnerComp /> */}
 
-      {/* CALL INNER COMPONENTS THROUGH JSX FORMAT MEANS NORMAL FUNCTION */}
-      {InnerComp()}
+//       {/* CALL INNER COMPONENTS THROUGH JSX FORMAT MEANS NORMAL FUNCTION */}
+//       {InnerComp()}
 
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
 
 // const User = (props) => {
