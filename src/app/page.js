@@ -2,7 +2,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import { useRouter } from "next/navigation";
-import dynamic from "next/dynamic";
 
 
 export default function Home() {
