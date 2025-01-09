@@ -30,4 +30,4 @@ npm run dev
 This repository is for learning purposes and may not include polished or production-ready code.
 Suggestions and feedback are welcome! 😊
 
-### Thank you for visiting my repository. Stay tuned for updates as I continue learning Next.js! 🚀
+###   Thank you for visiting my repository. Stay tuned for updates as I continue learning Next.js! 🚀
