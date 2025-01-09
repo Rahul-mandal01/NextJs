@@ -20,3 +20,19 @@ If you'd like to explore the code:
 1. Clone the repository:  
    ```bash
    git clone https://github.com/Rahul-mandal01/NextJs.git
+
+2.Navigate to the project folder:
+bash
+Copy code
+cd NextJs
+Install dependencies:
+bash
+Copy code
+npm install
+Start the development server:
+bash
+Copy code
+npm run dev
+Notes
+This repository is for learning purposes and may not include polished or production-ready code.
+Suggestions and feedback are welcome! 😊
