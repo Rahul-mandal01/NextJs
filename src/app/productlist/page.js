@@ -1,5 +1,6 @@
 "use client"
 import { useEffect, useState } from 'react';
+import Price from './price';
 
 export default function page() {
   const [product, setProduct] = useState([]);
@@ -16,10 +17,11 @@ export default function page() {
       {
         product.map((item)=>(
           <div>
-            <h3>Name: {item.title}, Price: {item.price}</h3>
+            <h3>Name: {item.title}</h3>
+            <Price price={item.price}/>
           </div>
         ))
       }
     </div>
   );
-}
+} 
