@@ -1,17 +1,22 @@
 "use client";
-import custom from './custom.module.css';
-import other from './other.module.css';
-import outside from '@/style/outside.module.css';
-
-
+import { useState } from "react";
+import style from "./style.module.css"
 
 export default function Home() {
+  const [color, setColor] = useState('blue');  // State for color
+  const {red} = style;    // Destructuring the style object
   return (
     <main>
-      <h1 className={custom.main}>CSS Modules with Next js</h1>
-      <h2 className={other.main}>Heading 2 in main page</h2>
-      <h2 className={outside.main}>Outside CSS</h2>
-    </main>
-  ); 
-}
+      <h1 className={color =='red' ? style.red : style.green} >Condition with style</h1>
+      <h2 style={{backgroundColor:color=='red' ? 'red' : 'green'}}>Heading 2</h2>
+      <h3 id = {style.orange}>Heading 3</h3>
 
+      <h4 className={red}>Dummy Text</h4>
+      <h4 className={red}>Dummy Text</h4>
+      <h4 className={red}>Dummy Text</h4>
+      <h4 className={red}>Dummy Text</h4>
+
+      <button onClick={() => setColor("blue")} >Update color</button>
+    </main>
+  );
+}
