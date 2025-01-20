@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <div>
-        <h1> Fetch data with API in Client Component </h1>
-        <Link href="/productlist">Go to Product Page</Link>
+        <h1> Style and CSS with Next.js </h1>
+        <h2> Heading 2 in main page </h2>
       </div>
     </div>
   );
