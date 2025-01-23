@@ -2,7 +2,7 @@
 export default function Home() {
   return (
     <main>
-      <h1>Generate Metadata in Next</h1>
+      <h1></h1>
     </main>
   );
 }
