@@ -2,7 +2,7 @@
 export default function Home() {
   return (
     <main>
-      <h1></h1>
+      <h1>Loader</h1>
     </main>
   );
 }
