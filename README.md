@@ -30,7 +30,6 @@ npm run dev
 This repository is for learning purposes and may not include polished or production-ready code.
 Suggestions and feedback are welcome! 😊
 
-
 ### License 📄
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
