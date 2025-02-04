@@ -5,7 +5,8 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'as2.ftcdn.net',
           },]
-    }
+    },
+    output: "export"
 };
 
 export default nextConfig;
