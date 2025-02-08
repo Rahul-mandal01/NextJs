@@ -1,11 +1,29 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images:{
-        remotePatterns: [{
-            protocol: 'https',
-            hostname: 'as2.ftcdn.net',
-          },]
-    },
+    redirects:async()=>{
+        return[
+            {
+                source:'/user',
+                destination:'/ ',
+                permanent:false
+            },
+            {
+                source:'/user/:userid',
+                destination:'/ ',
+                permanent:false
+            },
+            {
+                source:'/admin',
+                destination:'/user',
+                permanent:false
+            },
+            {
+                source:'/college',
+                destination:'/user',
+                permanent:false
+            }
+        ] 
+    } 
 };
 
-export default nextConfig;
+export default nextConfig; 
